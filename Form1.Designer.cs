@@ -75,6 +75,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1200, 768);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Form1
             // 
@@ -97,7 +98,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button closeBtn;
         private System.Windows.Forms.Button minButton;
-        private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Panel panel2;
     }
 }
 

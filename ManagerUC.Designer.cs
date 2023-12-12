@@ -1,6 +1,6 @@
 ﻿namespace HospitalManagementSystem
 {
-    partial class ManagerUserControl
+    partial class ManagerUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -63,6 +63,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1200, 768);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // bodyPanel
             // 
@@ -73,15 +74,18 @@
             this.bodyPanel.Name = "bodyPanel";
             this.bodyPanel.Size = new System.Drawing.Size(986, 765);
             this.bodyPanel.TabIndex = 3;
+            this.bodyPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.bodyPanel_Paint);
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Honeydew;
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 45);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(986, 720);
             this.panel4.TabIndex = 3;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel5
             // 
@@ -95,10 +99,11 @@
             this.panel5.Padding = new System.Windows.Forms.Padding(10);
             this.panel5.Size = new System.Drawing.Size(67, 183);
             this.panel5.TabIndex = 0;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkSalmon;
+            this.panel3.BackColor = System.Drawing.Color.Salmon;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -106,6 +111,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(986, 48);
             this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label1
             // 
@@ -118,6 +124,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Manager Portal";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -133,6 +140,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(214, 768);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button4
             // 
@@ -144,6 +152,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // patientsButton
             // 
@@ -178,6 +187,7 @@
             this.logOutButton.TabIndex = 7;
             this.logOutButton.Text = "Log Out";
             this.logOutButton.UseVisualStyleBackColor = true;
+            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // receptionistButton
             // 
@@ -189,6 +199,7 @@
             this.receptionistButton.TabIndex = 2;
             this.receptionistButton.Text = "Receptionists";
             this.receptionistButton.UseVisualStyleBackColor = true;
+            this.receptionistButton.Click += new System.EventHandler(this.receptionistButton_Click);
             // 
             // button2
             // 
@@ -203,6 +214,7 @@
             this.button2.TabIndex = 3;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // removeButton
             // 
@@ -217,6 +229,7 @@
             this.removeButton.TabIndex = 2;
             this.removeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.removeButton.UseVisualStyleBackColor = false;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
             // addUserBtn
             // 
@@ -231,6 +244,7 @@
             this.addUserBtn.TabIndex = 1;
             this.addUserBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.addUserBtn.UseVisualStyleBackColor = false;
+            this.addUserBtn.Click += new System.EventHandler(this.addUserBtn_Click);
             // 
             // pictureBox1
             // 
@@ -242,13 +256,14 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // ManagerUserControl
+            // ManagerUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Name = "ManagerUserControl";
+            this.Name = "ManagerUC";
             this.Size = new System.Drawing.Size(1200, 768);
             this.panel2.ResumeLayout(false);
             this.bodyPanel.ResumeLayout(false);

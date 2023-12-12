@@ -1,6 +1,6 @@
-﻿namespace HospitalManagementSystem.Resources
+﻿namespace HospitalManagementSystem
 {
-    partial class PatientsListUC
+    partial class ReceiptionistsListUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,19 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.bodyPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.removeButton = new System.Windows.Forms.Button();
             this.addUserBtn = new System.Windows.Forms.Button();
-            this.bodyPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.bodyPanel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.bodyPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // bodyPanel
+            // 
+            this.bodyPanel.Controls.Add(this.panel4);
+            this.bodyPanel.Controls.Add(this.panel3);
+            this.bodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bodyPanel.Location = new System.Drawing.Point(0, 0);
+            this.bodyPanel.Name = "bodyPanel";
+            this.bodyPanel.Size = new System.Drawing.Size(986, 768);
+            this.bodyPanel.TabIndex = 5;
             // 
             // panel4
             // 
@@ -107,19 +117,9 @@
             this.addUserBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.addUserBtn.UseVisualStyleBackColor = false;
             // 
-            // bodyPanel
-            // 
-            this.bodyPanel.Controls.Add(this.panel4);
-            this.bodyPanel.Controls.Add(this.panel3);
-            this.bodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bodyPanel.Location = new System.Drawing.Point(0, 0);
-            this.bodyPanel.Name = "bodyPanel";
-            this.bodyPanel.Size = new System.Drawing.Size(986, 768);
-            this.bodyPanel.TabIndex = 5;
-            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel3.BackColor = System.Drawing.Color.Crimson;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -133,23 +133,23 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label1.Location = new System.Drawing.Point(429, 7);
+            this.label1.Location = new System.Drawing.Point(426, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 33);
+            this.label1.Size = new System.Drawing.Size(212, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Patients";
+            this.label1.Text = "Receiptionists";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PatientsListUC
+            // receiptionistListUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bodyPanel);
-            this.Name = "PatientsListUC";
+            this.Name = "receiptionistListUC";
             this.Size = new System.Drawing.Size(986, 768);
+            this.bodyPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.bodyPanel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -158,12 +158,12 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel bodyPanel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button removeButton;
         private System.Windows.Forms.Button addUserBtn;
-        private System.Windows.Forms.Panel bodyPanel;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
     }

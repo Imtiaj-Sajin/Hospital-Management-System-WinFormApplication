@@ -15,7 +15,7 @@ namespace HospitalManagementSystem
         public Form1()
         {
             InitializeComponent();
-            ManagerUserControl userControl1 = new ManagerUserControl();
+            ReceiptionistUC userControl1 = new ReceiptionistUC();
             panel2.Controls.Add(userControl1);
         }
 
@@ -27,6 +27,11 @@ namespace HospitalManagementSystem
         private void minButton_Click(object sender, EventArgs e)
         {
             this.WindowState= FormWindowState.Minimized;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

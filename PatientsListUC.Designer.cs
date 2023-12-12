@@ -1,6 +1,6 @@
-﻿namespace HospitalManagementSystem
+﻿namespace HospitalManagementSystem.Resources
 {
-    partial class DoctorsListUserControl
+    partial class PatientsListUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,52 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bodyPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.crudPanel = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.removeButton = new System.Windows.Forms.Button();
             this.addUserBtn = new System.Windows.Forms.Button();
+            this.bodyPanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.bodyPanel.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.crudPanel.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.bodyPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // bodyPanel
-            // 
-            this.bodyPanel.Controls.Add(this.panel4);
-            this.bodyPanel.Controls.Add(this.panel3);
-            this.bodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bodyPanel.Location = new System.Drawing.Point(0, 0);
-            this.bodyPanel.Name = "bodyPanel";
-            this.bodyPanel.Size = new System.Drawing.Size(986, 768);
-            this.bodyPanel.TabIndex = 4;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel4.Controls.Add(this.crudPanel);
+            this.panel4.Controls.Add(this.panel5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 48);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(986, 720);
             this.panel4.TabIndex = 4;
             // 
-            // crudPanel
+            // panel5
             // 
-            this.crudPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.crudPanel.Controls.Add(this.button2);
-            this.crudPanel.Controls.Add(this.removeButton);
-            this.crudPanel.Controls.Add(this.addUserBtn);
-            this.crudPanel.Location = new System.Drawing.Point(919, 250);
-            this.crudPanel.Margin = new System.Windows.Forms.Padding(100);
-            this.crudPanel.Name = "crudPanel";
-            this.crudPanel.Padding = new System.Windows.Forms.Padding(10);
-            this.crudPanel.Size = new System.Drawing.Size(67, 183);
-            this.crudPanel.TabIndex = 0;
+            this.panel5.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel5.Controls.Add(this.button2);
+            this.panel5.Controls.Add(this.removeButton);
+            this.panel5.Controls.Add(this.addUserBtn);
+            this.panel5.Location = new System.Drawing.Point(919, 250);
+            this.panel5.Margin = new System.Windows.Forms.Padding(100);
+            this.panel5.Name = "panel5";
+            this.panel5.Padding = new System.Windows.Forms.Padding(10);
+            this.panel5.Size = new System.Drawing.Size(67, 183);
+            this.panel5.TabIndex = 0;
             // 
             // button2
             // 
@@ -93,7 +83,10 @@
             // 
             this.removeButton.BackColor = System.Drawing.Color.DarkSlateGray;
             this.removeButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.removeButton.FlatAppearance.BorderSize = 0;
+            this.removeButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.removeButton.FlatAppearance.BorderSize = 3;
+            this.removeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.removeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.removeButton.Image = global::HospitalManagementSystem.Properties.Resources.delete_user;
             this.removeButton.Location = new System.Drawing.Point(10, 64);
             this.removeButton.Margin = new System.Windows.Forms.Padding(0);
@@ -108,6 +101,8 @@
             this.addUserBtn.BackColor = System.Drawing.Color.DarkSlateGray;
             this.addUserBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.addUserBtn.FlatAppearance.BorderSize = 0;
+            this.addUserBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleGreen;
+            this.addUserBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.addUserBtn.Image = global::HospitalManagementSystem.Properties.Resources.new_user;
             this.addUserBtn.Location = new System.Drawing.Point(10, 10);
             this.addUserBtn.Margin = new System.Windows.Forms.Padding(0);
@@ -117,9 +112,19 @@
             this.addUserBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.addUserBtn.UseVisualStyleBackColor = false;
             // 
+            // bodyPanel
+            // 
+            this.bodyPanel.Controls.Add(this.panel4);
+            this.bodyPanel.Controls.Add(this.panel3);
+            this.bodyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bodyPanel.Location = new System.Drawing.Point(0, 0);
+            this.bodyPanel.Name = "bodyPanel";
+            this.bodyPanel.Size = new System.Drawing.Size(986, 768);
+            this.bodyPanel.TabIndex = 5;
+            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.panel3.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -135,21 +140,21 @@
             this.label1.ForeColor = System.Drawing.Color.GhostWhite;
             this.label1.Location = new System.Drawing.Point(429, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 33);
+            this.label1.Size = new System.Drawing.Size(128, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Doctors";
+            this.label1.Text = "Patients";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // DoctorsListUserControl
+            // PatientsListUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bodyPanel);
-            this.Name = "DoctorsListUserControl";
+            this.Name = "PatientsListUC";
             this.Size = new System.Drawing.Size(986, 768);
-            this.bodyPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.crudPanel.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.bodyPanel.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -158,13 +163,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel bodyPanel;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button removeButton;
         private System.Windows.Forms.Button addUserBtn;
-        public System.Windows.Forms.Panel crudPanel;
+        private System.Windows.Forms.Panel bodyPanel;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
     }
 }

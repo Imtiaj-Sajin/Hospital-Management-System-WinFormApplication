@@ -58,25 +58,64 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PatientEntryUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientEntryUC.Designer.cs">
+      <DependentUpon>PatientEntryUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientQueueUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientQueueUC.Designer.cs">
+      <DependentUpon>PatientQueueUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientSummaryUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PatientSummaryUC.Designer.cs">
+      <DependentUpon>PatientSummaryUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ManagerUserControl.cs">
+    <Compile Include="ManagerUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ManagerUserControl.Designer.cs">
-      <DependentUpon>ManagerUserControl.cs</DependentUpon>
+    <Compile Include="ManagerUC.Designer.cs">
+      <DependentUpon>ManagerUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Resources\PatientsListUC.cs">
+    <Compile Include="PatientsListUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Resources\PatientsListUC.Designer.cs">
+    <Compile Include="PatientsListUC.Designer.cs">
       <DependentUpon>PatientsListUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptionistsListUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReceiptionistsListUC.Designer.cs">
+      <DependentUpon>ReceiptionistsListUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptionistUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReceiptionistUC.Designer.cs">
+      <DependentUpon>ReceiptionistUC.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="DoctorsListUserControl.resx">
       <DependentUpon>DoctorsListUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientEntryUC.resx">
+      <DependentUpon>PatientEntryUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientQueueUC.resx">
+      <DependentUpon>PatientQueueUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSummaryUC.resx">
+      <DependentUpon>PatientSummaryUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,11 +127,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ManagerUserControl.resx">
-      <DependentUpon>ManagerUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="ManagerUC.resx">
+      <DependentUpon>ManagerUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\PatientsListUC.resx">
+    <EmbeddedResource Include="PatientsListUC.resx">
       <DependentUpon>PatientsListUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptionistsListUC.resx">
+      <DependentUpon>ReceiptionistsListUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptionistUC.resx">
+      <DependentUpon>ReceiptionistUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoctorsListUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DoctorsListUserControl.Designer.cs">
+      <DependentUpon>DoctorsListUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,15 @@
     <Compile Include="ManagerUserControl.Designer.cs">
       <DependentUpon>ManagerUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resources\PatientsListUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\PatientsListUC.Designer.cs">
+      <DependentUpon>PatientsListUC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DoctorsListUserControl.resx">
+      <DependentUpon>DoctorsListUserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +90,9 @@
     </Compile>
     <EmbeddedResource Include="ManagerUserControl.resx">
       <DependentUpon>ManagerUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PatientsListUC.resx">
+      <DependentUpon>PatientsListUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -103,6 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\new-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-info.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

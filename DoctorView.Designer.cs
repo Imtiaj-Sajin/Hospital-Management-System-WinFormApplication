@@ -1,6 +1,6 @@
 ﻿namespace HospitalManagementSystem
 {
-    partial class ManagerUC
+    partial class DoctorViewUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,9 +32,6 @@
             this.bodyPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.removeButton = new System.Windows.Forms.Button();
-            this.addUserBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,6 +40,9 @@
             this.doctorsButton = new System.Windows.Forms.Button();
             this.logOutButton = new System.Windows.Forms.Button();
             this.receptionistButton = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.removeButton = new System.Windows.Forms.Button();
+            this.addUserBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.bodyPanel.SuspendLayout();
@@ -62,8 +62,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1200, 768);
-            this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.TabIndex = 3;
             // 
             // bodyPanel
             // 
@@ -74,7 +73,6 @@
             this.bodyPanel.Name = "bodyPanel";
             this.bodyPanel.Size = new System.Drawing.Size(986, 765);
             this.bodyPanel.TabIndex = 3;
-            this.bodyPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.bodyPanel_Paint);
             // 
             // panel4
             // 
@@ -85,7 +83,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(986, 720);
             this.panel4.TabIndex = 3;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel5
             // 
@@ -99,52 +96,6 @@
             this.panel5.Padding = new System.Windows.Forms.Padding(10);
             this.panel5.Size = new System.Drawing.Size(67, 183);
             this.panel5.TabIndex = 0;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Image = global::HospitalManagementSystem.Properties.Resources.edit_info;
-            this.button2.Location = new System.Drawing.Point(10, 118);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(47, 54);
-            this.button2.TabIndex = 3;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // removeButton
-            // 
-            this.removeButton.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.removeButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.removeButton.FlatAppearance.BorderSize = 0;
-            this.removeButton.Image = global::HospitalManagementSystem.Properties.Resources.delete_user;
-            this.removeButton.Location = new System.Drawing.Point(10, 64);
-            this.removeButton.Margin = new System.Windows.Forms.Padding(0);
-            this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(47, 54);
-            this.removeButton.TabIndex = 2;
-            this.removeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.removeButton.UseVisualStyleBackColor = false;
-            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
-            // 
-            // addUserBtn
-            // 
-            this.addUserBtn.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.addUserBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.addUserBtn.FlatAppearance.BorderSize = 0;
-            this.addUserBtn.Image = global::HospitalManagementSystem.Properties.Resources.new_user;
-            this.addUserBtn.Location = new System.Drawing.Point(10, 10);
-            this.addUserBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.addUserBtn.Name = "addUserBtn";
-            this.addUserBtn.Size = new System.Drawing.Size(47, 54);
-            this.addUserBtn.TabIndex = 1;
-            this.addUserBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.addUserBtn.UseVisualStyleBackColor = false;
-            this.addUserBtn.Click += new System.EventHandler(this.addUserBtn_Click);
             // 
             // panel3
             // 
@@ -156,20 +107,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(986, 48);
             this.panel3.TabIndex = 4;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label1.Location = new System.Drawing.Point(347, 7);
+            this.label1.Location = new System.Drawing.Point(379, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 33);
+            this.label1.Size = new System.Drawing.Size(107, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Manager Portal";
+            this.label1.Text = "Doctor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -185,7 +134,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(214, 768);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button4
             // 
@@ -197,7 +145,6 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "View Patients";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // patientsButton
             // 
@@ -209,7 +156,6 @@
             this.patientsButton.TabIndex = 9;
             this.patientsButton.Text = "Patient Summary";
             this.patientsButton.UseVisualStyleBackColor = true;
-            this.patientsButton.Click += new System.EventHandler(this.patientsButton_Click);
             // 
             // doctorsButton
             // 
@@ -219,9 +165,8 @@
             this.doctorsButton.Name = "doctorsButton";
             this.doctorsButton.Size = new System.Drawing.Size(214, 64);
             this.doctorsButton.TabIndex = 8;
-            this.doctorsButton.Text = "Doctors";
+            this.doctorsButton.Text = "Queued Patients";
             this.doctorsButton.UseVisualStyleBackColor = true;
-            this.doctorsButton.Click += new System.EventHandler(this.doctorsButton_Click);
             // 
             // logOutButton
             // 
@@ -232,7 +177,6 @@
             this.logOutButton.TabIndex = 7;
             this.logOutButton.Text = "Log Out";
             this.logOutButton.UseVisualStyleBackColor = true;
-            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // receptionistButton
             // 
@@ -242,9 +186,50 @@
             this.receptionistButton.Name = "receptionistButton";
             this.receptionistButton.Size = new System.Drawing.Size(214, 64);
             this.receptionistButton.TabIndex = 2;
-            this.receptionistButton.Text = "Receptionists";
+            this.receptionistButton.Text = "Assign Patient";
             this.receptionistButton.UseVisualStyleBackColor = true;
-            this.receptionistButton.Click += new System.EventHandler(this.receptionistButton_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.Image = global::HospitalManagementSystem.Properties.Resources.edit_info;
+            this.button2.Location = new System.Drawing.Point(10, 118);
+            this.button2.Margin = new System.Windows.Forms.Padding(0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(47, 54);
+            this.button2.TabIndex = 3;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // removeButton
+            // 
+            this.removeButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.removeButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.removeButton.FlatAppearance.BorderSize = 0;
+            this.removeButton.Image = global::HospitalManagementSystem.Properties.Resources.delete_user;
+            this.removeButton.Location = new System.Drawing.Point(10, 64);
+            this.removeButton.Margin = new System.Windows.Forms.Padding(0);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(47, 54);
+            this.removeButton.TabIndex = 2;
+            this.removeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.removeButton.UseVisualStyleBackColor = false;
+            // 
+            // addUserBtn
+            // 
+            this.addUserBtn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.addUserBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addUserBtn.FlatAppearance.BorderSize = 0;
+            this.addUserBtn.Image = global::HospitalManagementSystem.Properties.Resources.new_user;
+            this.addUserBtn.Location = new System.Drawing.Point(10, 10);
+            this.addUserBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.addUserBtn.Name = "addUserBtn";
+            this.addUserBtn.Size = new System.Drawing.Size(47, 54);
+            this.addUserBtn.TabIndex = 1;
+            this.addUserBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.addUserBtn.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -256,14 +241,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // ManagerUC
+            // DoctorViewUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Name = "ManagerUC";
+            this.Name = "DoctorViewUC";
             this.Size = new System.Drawing.Size(1200, 768);
             this.panel2.ResumeLayout(false);
             this.bodyPanel.ResumeLayout(false);
@@ -280,20 +264,20 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button logOutButton;
-        private System.Windows.Forms.Button receptionistButton;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button patientsButton;
-        private System.Windows.Forms.Button doctorsButton;
         private System.Windows.Forms.Panel bodyPanel;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button removeButton;
         private System.Windows.Forms.Button addUserBtn;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button patientsButton;
+        private System.Windows.Forms.Button doctorsButton;
+        private System.Windows.Forms.Button logOutButton;
+        private System.Windows.Forms.Button receptionistButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

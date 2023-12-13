@@ -15,6 +15,9 @@ namespace HospitalManagementSystem
         public ReceiptionistUC()
         {
             InitializeComponent();
+            PatientEntryUC patientEntryUC = new PatientEntryUC();
+            bodyPanel.Controls.Clear();
+            bodyPanel.Controls.Add(patientEntryUC);
         }
 
         private void label3_Click(object sender, EventArgs e)

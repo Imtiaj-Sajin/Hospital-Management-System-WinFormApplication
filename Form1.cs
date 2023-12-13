@@ -15,7 +15,7 @@ namespace HospitalManagementSystem
         public Form1()
         {
             InitializeComponent();
-            ReceiptionistUC userControl1 = new ReceiptionistUC();
+            ManagerUC userControl1 = new ManagerUC();
             panel2.Controls.Add(userControl1);
         }
 

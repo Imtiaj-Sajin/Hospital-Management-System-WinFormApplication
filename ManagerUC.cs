@@ -80,6 +80,9 @@ namespace HospitalManagementSystem
 
         private void receptionistButton_Click(object sender, EventArgs e)
         {
+            ReceiptionistsListUC receiptionists=new ReceiptionistsListUC();
+            bodyPanel.Controls.Clear();
+            bodyPanel.Controls.Add(receiptionists);
 
         }
 

@@ -16,5 +16,10 @@ namespace HospitalManagementSystem
         {
             InitializeComponent();
         }
+
+        private void receptionistButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
